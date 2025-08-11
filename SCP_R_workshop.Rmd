@@ -1,0 +1,35 @@
+---
+title: "Single Cell Proteomics Workshop"
+output: html_document
+---
+
+#### SCP Workshop
+
+Welcome to your first hands-on experience in single cell proteomics!
+
+R Packages/Workshops we can use as a guide:
+
+-   scp Package: <https://bioconductor.org/packages/release/bioc/vignettes/scp/inst/doc/scp.html>, <https://bioconductor.org/packages/release/bioc/vignettes/scp/inst/doc/scp_data_modelling.html>
+-   QuantQC Package: <https://scp.slavovlab.net/QuantQC>
+-   Small overview of some other commonly used tools for single cell proteomics analysis: <https://www.mtoz-biolabs.com/data-analysis-strategies-and-toolkits-for-single-cell-proteomics.html>
+
+```{r}
+
+
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install(version = "3.21")
+
+# Pckage with functions for manipulating, processing, and analyzing mass spectrometry-based single-cell proteomics data
+BiocManager::install("scp")
+
+library("scp")
+
+# Typical example of what you would get after reading in a CSV file
+data("mqScpData")
+
+# Example of a sample annotation table 
+data("sampleAnnotation")
+
+
+```
