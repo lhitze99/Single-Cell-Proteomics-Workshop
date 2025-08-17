@@ -105,6 +105,12 @@ We first filter out low-confident PTMs based on the feature annotation (informat
 
 The Parental Ion Fraction (PIF) is a measure used in tandem mass spectrometry (MS/MS) to estimate how “pure” a selected precursor ion is when it’s isolated for fragmentation.
 
+PIF ranges between 0 and 1.
+A high PIF (close to 1) means the isolation is clean 
+A low PIF (< 0.5) means contamination by co-isolated ions and can lead to noisy or mixed MS/MS spectra
+
+@Lara: How about we change the PIF>0.3 and have a question here: 
+
 ```{r}
 # Filter features based on feature annotations
 scp_filtered <- filterFeatures(scp_cleaned, 
