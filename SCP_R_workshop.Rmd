@@ -11,7 +11,7 @@ output: html_document
 
 # SCP Workshop
 
-Welcome to your first hands-on experience in single cell proteomics! We will perform some common steps or mass spectrometry-based single cell proteomics data analysis here. We will work here with a package which is used to analyze single cell proteomics data, the `scp` package. This package is part of Bioconductor. This package works with QFeatures objects, which are a type of data structure used to store and manipulate MS-based quantitative data and with SingleCellExperiment objects, which are used to store, process, vizualize and analyse single-cell data. The data structure in this package wrap QFeature objects around SingleCellExperiment objects.
+Welcome to your first hands-on experience in single-cell proteomics! We will perform some common steps of mass spectrometry-based single-cell proteomics data analysis here. We will work here with a package which is used to analyse single-cell proteomics data, the `scp` package. This package is part of Bioconductor. This package works with QFeatures objects, which are a type of data structure used to store and manipulate MS-based quantitative data and with SingleCellExperiment objects, which are used to store, process, visualise and analyse single-cell data. The data structure in this package wraps QFeature objects around SingleCellExperiment objects.
 
 (Maybe we can show the graphic of QFeatures shortly on a slide here while we explain this)
 
