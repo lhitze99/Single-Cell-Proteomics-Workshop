@@ -103,6 +103,8 @@ rowDataNames(scp_cleaned) # List available variables for each assay
 
 We first filter out low-confident PTMs based on the feature annotation (information that is given by MaxQuant).
 
+The Parental Ion Fraction (PIF) is a measure used in tandem mass spectrometry (MS/MS) to estimate how “pure” a selected precursor ion is when it’s isolated for fragmentation.
+
 ```{r}
 # Filter features based on feature annotations
 scp_filtered <- filterFeatures(scp_cleaned, 
