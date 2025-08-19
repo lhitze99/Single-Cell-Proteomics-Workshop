@@ -7,7 +7,7 @@ output: html_document
 
 Welcome to your first hands-on experience in single-cell proteomics! We will perform some common steps of mass spectrometry-based single-cell proteomics data analysis here. We will work here with a package which is used to analyse single-cell proteomics data, the `scp` package. This package is part of Bioconductor. This package works with QFeatures objects, which are a type of data structure used to store and manipulate MS-based quantitative data and with SingleCellExperiment objects, which are used to store, process, visualise and analyse single-cell data. The data structure in this package wraps QFeature objects around SingleCellExperiment objects.
 
-![](images/clipboard-2790412158.png)
+![](images/clipboard-3136407371.png)
 
 ```{r message=FALSE, warning=FALSE}
 # Install all required packages
@@ -204,9 +204,7 @@ scp_scr_filtered <- pep2qvalue(scp_scr_filtered,
 
 It is suggested to compute relative reporter ion intensities in order to partially correct for between-run variation. This is done by dividing the intensities measured for single-cells by the reference channels containing 5-cell equivalents.
 
-Why divide by reference channels?
-Reference channel is less noisy than a single cell, so dividing them by a single cell could scale them to a common control and correct for run-to-run bias, technical variability, and improve the comparability across samples.
-
+Why divide by reference channels? Reference channel is less noisy than a single cell, so dividing them by a single cell could scale them to a common control and correct for run-to-run bias, technical variability, and improve the comparability across samples.
 
 ```{r}
 # Function that divides channels of interest by reference channel
@@ -544,3 +542,11 @@ subsetByFeature(scp_scr_filtered, "P13796") |>
 ## Get the features related to PUR9 
 
 ```
+
+For further exploration, please check out the following link:
+
+-   <https://www.bioconductor.org/packages/release/bioc/vignettes/scp/inst/doc/advanced.html>
+
+-   <https://zhanghao-njmu.github.io/SCP/>
+
+-   <https://www.rformassspectrometry.org/pkgs/>
