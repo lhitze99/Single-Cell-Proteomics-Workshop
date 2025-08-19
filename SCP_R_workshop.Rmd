@@ -204,7 +204,9 @@ scp_scr_filtered <- pep2qvalue(scp_scr_filtered,
 
 It is suggested to compute relative reporter ion intensities in order to partially correct for between-run variation. This is done by dividing the intensities measured for single-cells by the reference channels containing 5-cell equivalents.
 
-*I think we need to add more explanation here*
+Why divide by reference channels?
+Reference channel is less noisy than a single cell, so dividing them by a single cell could scale them to a common control and correct for run-to-run bias, technical variability, and improve the comparability across samples.
+
 
 ```{r}
 # Function that divides channels of interest by reference channel
